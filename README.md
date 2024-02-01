@@ -1,5 +1,4 @@
 # Roowner
 
 <br />
-
-1인 프로젝트!
+next 14 버전과 react-three를 제대로 활용해보자
