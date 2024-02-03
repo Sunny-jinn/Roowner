@@ -7,8 +7,8 @@ const Hello = () => {
   return (
     <Canvas>
       <mesh>
-        <boxGeometry args={[1, 1]} />
-        <meshStandardMaterial color={"cyan"} />
+        <planeGeometry args={[1, 1]} />
+        <meshStandardMaterial color={"#f0f0f0"} />
       </mesh>
       <directionalLight position={[1, 2, 3]} />
       <OrbitControls />
