@@ -1,16 +1,19 @@
 "use client";
 
-import { Grid, OrbitControls } from "@react-three/drei";
+import { Environment, Grid, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 const Hello = () => {
   return (
-    <Canvas camera={{ position: [8, 8, 8], fov: 30 }}>
-      <mesh rotation-x={Math.PI / 2} position={[1, 1, 1]}>
+    <Canvas camera={{ position: [8, 8, 8] }}>
+      <color attach="background" args={["#ececec"]} />
+
+      <mesh rotation-x={-Math.PI / 2}>
         <planeGeometry args={[5, 5]} />
-        <meshStandardMaterial color={"#f0f0f0"} />
+        <meshStandardMaterial color={"red"} />
       </mesh>
-      <directionalLight position={[1, 2, 3]} />
+      <Environment preset="sunset" />
+
       <OrbitControls />
       <Grid infiniteGrid fadeDistance={50} fadeStrength={5} />
     </Canvas>
