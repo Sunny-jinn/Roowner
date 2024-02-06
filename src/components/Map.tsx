@@ -3,7 +3,7 @@
 import { Environment, Grid, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-const Hello = () => {
+const Map = () => {
   return (
     <Canvas camera={{ position: [8, 8, 8] }}>
       <color attach="background" args={["#ececec"]} />
@@ -20,4 +20,4 @@ const Hello = () => {
   );
 };
 
-export default Hello;
+export default Map;
